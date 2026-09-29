@@ -1,0 +1,13 @@
+# 密钥文件，绝对不能上传
+.env
+
+# Python 运行时自动生成的缓存
+__pycache__/
+*.pyc
+
+# 虚拟环境
+venv/
+.venv/
+
+# PyCharm 的项目配置
+.idea/
