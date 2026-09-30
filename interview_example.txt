@@ -1,0 +1,33 @@
+Q: What are you trying to teach students about AI and cybersecurity?
+
+Dr. Bent: I want students to think critically about AI systems. They need to understand how these tools work, what they can and cannot do, and how they might be exploited.
+
+I often build interactive, low-stakes environments for that. Virtual escape rooms, controlled red-teaming exercises, and now Hack Your Grade. Students learn more when they have to interact with the system directly.
+
+Q: Hack Your Grade has a wonderfully simple premise. What happens when a student opens it?
+
+Dr. Bent: The chatbot is designed not to give A’s. A student might ask for an A, and the chatbot may come back with a 75. They push again, maybe it moves to a 78. The point is that students have to figure out how the system responds and what kinds of strategies work.
+
+Q: So the grade becomes part of the learning environment.
+
+Dr. Bent: Yes. The final grade assigned by the chatbot is the grade for the assignment. That raises the stakes enough to make students care, but the environment is still bounded and playful. It also gives me a break from grading.
+
+Q: What kinds of strategies did students discover?
+
+Dr. Bent: They were very creative. Some used social engineering and persistence. Some tried to persuade the bot by describing their effort or accomplishments. Others used more technical prompt-injection approaches, asking the bot to take on a different role or process a grade expression that added up to a higher score.
+
+Q: That sounds like the lesson is less about memorizing a definition of prompt injection and more about developing a feel for how these systems behave.
+
+Dr. Bent: Exactly. There is no single right answer. Students have to test, observe, revise, and try again. That is the same mindset they need for adversarial AI and cybersecurity.
+
+Q: What did students take away from it?
+
+Dr. Bent: Students described it as fun and novel, but they also connected it to real-world adversarial AI. They said it helped them think like a hacker and better understand model limitations and exploitation.
+
+Q: What did you build it with?
+
+Dr. Bent: It is a simple app built with Next.js and GPT-4o mini. The most important part was the system prompt design and the learning goal around it.
+
+Q: What should other instructors learn from this example?
+
+Dr. Bent: Students need spaces where they can safely experiment with AI systems. If we want them to understand risk, misuse, and model behavior, we should let them explore those ideas in controlled environments where failure is part of the learning.

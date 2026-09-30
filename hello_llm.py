@@ -38,12 +38,16 @@ def ask_llm(question: str, role: str="你是一个简洁的助手，请用中文
     # 模型的回答藏在返回结果的这个位置
     return response.choices[0].message.content
 
+def summarise_interview(text):
+    summary = ask_llm(question=text, role = '你是一名擅长提炼英文访谈要点的中文编辑，只总结三句话，每句话不超过40个字')
+    return summary
+
+
+
 if __name__ == "__main__":
-    if not API_KEY:
-        print("没有找到 API Key，请检查 .env 文件是否存在，以及里面是否填写了 LLM_API_KEY")
-    else:
-        question = ["成都在中国的哪个方位", "地球上一共有几大洲几大洋", "今年是哪一年"]
-        for q in question:
-            answer = ask_llm(q, role="你是一个精通世界地理的专家")
-            print(answer)
-            print("--" * 20)
+
+    fpath = "D:\\interview_radar\\interview_example.txt"
+    with open(fpath, 'r') as f:
+        content = f.read()
+
+    print(summarise_interview(content))
